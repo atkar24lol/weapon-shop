@@ -103,6 +103,12 @@ header {
   background-size: 40%;
   background-repeat: no-repeat;
   transition: background-color 0.5s;
+  display: flex;
+}
+
+.bag a {
+  align-self: stretch;
+  justify-self: stretch;
 }
 
 .bag:hover {
@@ -147,6 +153,16 @@ header {
   background-color: #89996b;
   width: 100px;
   margin: 30px 0 0 -10px;
+}
+
+#top-menu .active::before {
+  content: "";
+  position: absolute;
+  background-color: #89996b;
+  height: 5px;
+  width: 100px;
+  margin: 30px 0 0 -10px;
+  z-index: 999;
 }
 
 .social {
@@ -377,4 +393,9 @@ footer {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+}
+
+
+.active-bag {
+  background-color: #c3664b;
 }
